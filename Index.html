@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rafaelu</title>
+    <link rel="stylesheet" href="Index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+    />
+</head>
+<body class="body">
+    <div class="container">
+        <div class="profile-card">
+            <img 
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/38400b68-0138-4eb2-879a-2c77e55c6b67/dgtk0im-71b11417-5f5c-4f1a-ab80-3b3fb4b236d6.png/v1/fill/w_894,h_894/pfp_for_my_new_discord_server_read_the_description_by_cheetosfromadiscord_dgtk0im-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcLzM4NDAwYjY4LTAxMzgtNGViMi04NzlhLTJjNzdlNTVjNmI2N1wvZGd0azBpbS03MWIxMTQxNy01ZjVjLTRmMWEtYWI4MC0zYjNmYjRiMjM2ZDYucG5nIiwid2lkdGgiOiI8PTIwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.C7aD5W13uLASaNBXsQkUQJPodL0pF8VVYYb8r2RTJyk" 
+                alt="profile pic" 
+                class="avatar" 
+            />
+            <h1 class="name">rafaelu</h1>
+            <p class="bio">This is a basic portfolio</p>
+            <a href="mailto:alberto.apetrei.aa@gmail.com" class="email">trying to contact me?</a>
+            <div class="icons">
+                <a href="https://www.instagram.com/rafaelu._.13/" target="_blank" class="icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/ApetreiAa" target="_blank" class="icon" aria-label="X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://github.com/Rafaelmaxi1" target="_blank" class="icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <h3 class="section-title">things i'm cooking 👨‍🍳</h3>
+        <ul class="section-list">
+            <li>
+                <strong>Web Development 🌐</strong>
+                <span>Improving my skills in HTML, CSS, and JavaScript, building web apps.</span>
+            </li>
+            <li>
+                <strong>Game Development 👾</strong>
+                <span>Learning game mechanics and design. Excited to create fun experiences!</span>
+            </li>
+            <li>
+                <strong>Writing Poetry 🪶</strong>
+                <span>Finding inspiration from the everyday and my experiences.</span>
+            </li>
+        </ul>
+
+        <h3 class="section-title">some photos from my projects 📷</h3>
+        <div class="photo-grid">
+            <img src="https://i.ibb.co/DDKGzpg8/image.png" alt="cat closeup" />
+            <img src="https://i.ibb.co/TCvr2x1/image.png" alt="cat closeup" />
+        </div>
+
+        <h3 class="section-title">past projects 🚀</h3>
+        <ul class="section-list">
+            <li>
+                <strong>Interactive Valentine's Day Invite 🏹💌 </strong>
+                <span>A heartfelt, interactive invitation using full-stack web development.</span>
+            </li>
+            <li>
+                <strong>Game Jam Project 🎮</strong>
+                <span>Made for the 2025 FiiCode GameDev Area, it was a great learning experience!</span>
+            </li>
+            <li>
+                <strong>A multiplayer painting website 🖌️🥇</strong>
+                <span>A website made for a Hackathon with the theme "Creation Of Collective Imagination" that won 3rd Place.
+                </span>
+            </li>
+            <li>
+                <strong>StarCatalog ⭐</strong>
+                <span>A web app that keeps counts of student's grades. The app was made for a National Conference Of Virtual Education.</span>
+            </li>
+            <li>
+                <strong>EduLearn 🧐🎓</strong>
+                <span>A web app like CodeCamp, CodeAcademy and others. Its an E-Learning website that me and my friends created for one of our Entrepreneurship class.</span>
+            </li>
+        </ul>
+
+        <h3 class="section-title">random facts 🤔</h3>
+        <div class="text-block" id="random-facts" onclick="changeFact()">
+            <p id="fact-text">
+                Did you know? Cats sleep for around 12-16 hours a day! 🐱
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2036 rafaelu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const facts = [
+            "Did you know? Cats sleep for around 12-16 hours a day! 🐱",
+            "Random Fact: The Eiffel Tower can grow taller during the summer! 🌞",
+            "Did you know? Bananas are technically berries! 🍌",
+            "Fun Fact: Honey never spoils. Archaeologists have found pots of honey in ancient tombs! 🍯",
+            "Random Fact: A day on Venus is longer than a year on Venus! 🌍"
+        ];
+
+        function changeFact() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            const factTextElement = document.getElementById('fact-text');
+
+            factTextElement.classList.remove('falling-text');
+            void factTextElement.offsetWidth;
+            factTextElement.classList.add('falling-text');
+
+            factTextElement.textContent = facts[randomIndex];
+        }
+    </script>
+</body>
+</html>
